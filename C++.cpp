@@ -2,49 +2,18 @@
 using namespace std;
 int main()
 {
-    int a,b,c;
-    cout << "\n\nEnter first number :";
+    int a,b,tmp;
+    cout << "\nEnter first number : ";
     cin >> a;
-    cout << "\nEnter second number :";
+    cout << "Enter second number : ";
     cin >> b;
 
-    cout << "\n**********MAIN MENU**********";
-    cout << "\n[1]ADDITION";
-    cout << "\n[2]SUBTRACTION";
-    cout << "\n[3]MULTIPLICATION";
-    cout << "\n[4]DIVSION(Quotient)";
-    cout << "\n[5]EXIT";
-    bjump:
-    cout << "\n\nCHOOSE YOUR OPTION :";
-    cin >> c;
- 
-   switch(c)
-    {
-        case 1:
-        cout << "\nAddition : " << a+b;
-        break;
+    tmp = a; // tmp=9 
+    a = b;   // a=8
+    b = tmp; // b= 9
 
-        case 2:
-        cout << "\nSubtraction : " << a-b;
-        break;
-
-        case 3:
-        cout << "\nMultiplication : " << a*b;
-        break;
-
-        case 4:
-        cout << "\nDivision : " << a/b;
-        break;
-
-        if(c==5)
-        case 5:
-        cout << "\nGoodbye !!!!";
-        break;
-        
-        default:
-        cout << "\nEnter valid input(choice) !!";
-    }
-    if(c!=5)
-        goto bjump;
+    cout << "\nSwapping of numbers ........";
+    cout << "\nFirst number : " << a;
+    cout << "\nSecond number : " << b;
     return 0;
 }
